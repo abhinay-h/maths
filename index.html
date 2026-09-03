@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MathLab - Don't just learn maths. Unlock it.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true">
+    <span>25%</span><span>x + 7</span><span>3/4</span><span>98 x 97</span><span>n²</span>
+  </div>
+
+  <div class="app-shell">
+    <aside class="side-nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" data-route="home">
+        <span class="brand-mark">ML</span>
+        <span><strong>MathLab</strong><small>Unlock maths</small></span>
+      </a>
+      <nav id="sideNav"></nav>
+    </aside>
+
+    <main class="main-stage">
+      <header class="top-strip">
+        <div>
+          <button class="micro stat-button" type="button" id="levelInfo">Level <strong id="levelText">7</strong></button>
+          <button class="micro stat-button" type="button" id="xpInfo">XP <strong id="xpText">1240</strong></button>
+          <button class="micro stat-button" type="button" id="streakInfo">Streak <strong id="streakText">7</strong></button>
+        </div>
+        <div class="top-actions">
+          <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+            <span class="theme-knob" aria-hidden="true"></span>
+            <span id="themeText">Dark</span>
+          </button>
+          <button class="small-action" type="button" id="quickPractice">Start practice</button>
+        </div>
+      </header>
+
+      <section id="view" tabindex="-1" aria-live="polite"></section>
+    </main>
+
+    <aside class="right-panel" aria-label="Learning context">
+      <div class="context-orb">
+        <span id="contextScore">48%</span>
+        <small id="contextLabel">Percentages</small>
+      </div>
+      <div class="context-card">
+        <h2>Next unlock</h2>
+        <p id="nextUnlock">Master 25% questions to unlock reverse percentages.</p>
+      </div>
+      <div class="context-card">
+        <h2>Weak spot</h2>
+        <p id="weakSpot">Fraction to percentage connection.</p>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation"></nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-root" id="challengeModal" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
